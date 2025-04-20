@@ -84,11 +84,11 @@ export default function Button() {
         {isLoading ? "Loading..." : "Fetch Article"}
       </button>
       <p className="mt-4 text-white text-sm text-center">
-        Click to read a random article from Hacker News
+        click to read a random article from hacker news
       </p>
       {articles.length > 0 && (
         <div className="mt-10">
-          <h2 className="text-lg font-semibold mb-2 text-center">Articles</h2>
+          <h2 className="text-lg font-semibold mb-2 text-center">articles</h2>
           <ul className="text-center">
             {articles.map((article) => (
               <li key={article.id} className="mb-1">
@@ -112,7 +112,7 @@ export default function Button() {
           className="mt-4 px-4 py-2 rounded-lg font-medium text-sm bg-green-500 hover:bg-green-600 text-black hover:shadow-lg active:scale-95"
           aria-label="Download article links"
         >
-          Download Links
+          download links
         </button>
       )}
     </div>
