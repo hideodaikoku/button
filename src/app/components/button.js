@@ -25,7 +25,7 @@ export default function Button() {
 
       // Check if the story has a URL and open it
       if (storyData && storyData.url) {
-        window.open(storyData.url, '_blank');
+        window.open(storyData.url, '_blank');f
         // Update article state
         setArticles(prevArticles => [...prevArticles, {
           id: nextId++,
