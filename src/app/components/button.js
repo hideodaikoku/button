@@ -81,7 +81,7 @@ export default function Button() {
         }`}
         aria-label="Fetch a random article"
       >
-        {isLoading ? "Loading..." : "button"}
+        {isLoading ? "..." : "button"}
       </button>
       <p className="mt-4 text-white text-sm text-center">
         click to read a random article from hacker news
