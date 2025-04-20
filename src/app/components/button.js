@@ -91,7 +91,7 @@ export default function Button() {
           <h2 className="text-lg font-semibold mb-2 text-center">articles</h2>
           <ul className="text-center">
             {articles.map((article) => (
-              <li key={article.id} className="mb-1">
+              <li key={article.id} className="mb-1 break-words">
                 <a
                   href={article.url}
                   target="_blank"

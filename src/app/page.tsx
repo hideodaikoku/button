@@ -7,7 +7,7 @@ export default function Home() {
         <Button/>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        
+        <a href="https://wavecut.dev" aria-description="wavecut website">wavecut.dev</a>
       </footer>
     </div>
   );
