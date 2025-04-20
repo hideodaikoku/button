@@ -20,7 +20,32 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-doto);
+  /* Define CSS variables for easier customization */
+  --dot-color-1: rgba(255, 255, 255, 0.05); /* White, low opacity */
+  --dot-size-1: 1px;
+  --dot-spacing-1: 4px;   /* 2^2 */
+
+  --dot-color-2: rgba(255, 255, 255, 0.1); /* White, medium opacity */
+  --dot-size-2: 2px;
+  --dot-spacing-2: 8px;   /* 2^3 */
+
+
+  --base-background-color: #000; /* Black background */
+  --base-text-color: #eee;    /* Light text */
+  --base-font-family: sans-serif;
+
+  background-color: var(--base-background-color);
+  color: var(--base-text-color);
+  font-family: var(--base-font-family);
+
+  /* Layered radial gradients for varying dot sizes and opacities */
+  background-image:
+    radial-gradient(var(--dot-color-1) var(--dot-size-1), transparent var(--dot-size-1)),
+    radial-gradient(var(--dot-color-2) var(--dot-size-2), transparent var(--dot-size-2));
+
+  background-size:
+    var(--dot-spacing-1) var(--dot-spacing-1),
+    var(--dot-spacing-2) var(--dot-spacing-2);
+
+  background-position: 0 0, 5px 5px; /* Offset the layers */
 }
